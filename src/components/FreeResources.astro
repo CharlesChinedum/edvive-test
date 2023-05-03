@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+import dolfine from '../assets/Dolfi.svg';
+import avatar1 from '../assets/avatar1.svg';
+import avatar2 from '../assets/avatar2.svg';
+import avatar3 from '../assets/avatar3.svg';
+import avatar4 from '../assets/avatar4.png';
+import avatar5 from '../assets/avatar5.svg';
+import count from '../assets/count.svg';
+import spiral from '../assets/spiral.svg';
+import book from '../assets/book.svg';
+---
+
+<Layout title="Free Resources">
+    <section>
+        <div class="container">
+            <div class="inner-container">
+            <div class="left">
+                <div class="inner">
+                    <h2 class="title">Your Today’s <span class="free-text"> Free</span> <br>
+                        Resources</h2>
+                        <p class="description">Various news and reports about Edvive have been published in various media outlets including daily newspapers and television channels.</p>
+                </div>
+                <div>
+                    <img src={dolfine} alt="shark" class="shark" />
+                </div>
+                
+            </div>
+            
+            <div class="right">
+
+                <div class="card-container">
+                    <div class="left-card">
+                        <h2 class="left-card-title">
+                            Already 1k+ People Collected <br>
+                            ur Free Resources
+                        </h2>
+
+                        <div class="avatars-container">
+                            <img src={avatar1} alt="avatar-one">
+                            <img src={avatar2} alt="avatar-two">
+                            <img src={avatar3} alt="avatar-three">
+                            <img src={avatar4} alt="avatar-four">
+                            <img src={avatar5} alt="avatar-five">
+                            <img src={count} alt="count">
+                        </div>
+                    </div>
+                    <div class="right-card">
+                        <div class="spiral-container">
+                            <img src={spiral} alt="spiral" class="spiral">
+                        </div>
+                        <h2 class="right-card-title ">Todays Learning</h2>
+                        <div class="right-card-description-container">
+                            <h2 class="when-to-use">When to Use <span class="ought-to">“Ought to”</span> instead of <span class="must"> “Must” </span></h2>
+                            <p class="right-card-description">When talking about one's responsibility/duties/obligations! Say "Ought to" instead of saying "Must"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-card">
+                    <div class="book-container">
+                        <img src={book} alt="book" class="book">
+                    </div>
+                    <div class="cta">
+                        <div>
+
+                            <h2 class="cta-title">Recharge Your Grammar <br>Within 8 Hours</h2>
+                            <p class="cta-description">This is the most guided vocabulary practice app in the <br> world. Be the master of 15 vocabularies everyday. Be the <br> vocabulary master in just 60 days!</p>
+                        </div>
+                        <div class="email-top-container">
+                            <p class="enter-email">Enter your email to get the download link</p>
+                            <div class="email-container">
+                                <input type="text" placeholder="Enter your email" class="email-input">
+                                <button class="email-btn">Get Link</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</Layout>
